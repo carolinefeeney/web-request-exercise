@@ -28,3 +28,8 @@ for student in parsed_response["students"]: #student will be a dictionary and st
 avg_grade = statistics.mean(grades)
 print("THE AVERAGE GRADE IS: " + str(avg_grade))
 
+# Iterating through one list to populate the contents of another
+
+#now using list comprehension
+
+grades = [student["finalGrade"] for student in parsed_response["students"]]
